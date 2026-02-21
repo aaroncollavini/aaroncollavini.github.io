@@ -3,91 +3,122 @@
 <head>
 <meta charset="UTF-8">
 <title>Aaron Collavini – Physics & Philosophy</title>
-
-<!-- Meta SEO -->
-<meta name="description" content="PhD student in theoretical physics and philosophy. Research interests: cosmology, general relativity, foundations of physics.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="PhD student in theoretical physics and philosophy. Research interests: cosmology, general relativity, foundations of physics.">
 
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
 <style>
-/* Global Styles */
+/* Reset & global */
+* { box-sizing: border-box; margin:0; padding:0; }
 body {
-  margin: 0;
-  padding: 0;
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
   color: #222;
-  background: #f2f4f8; /* Soft light background */
+  background: linear-gradient(135deg, #e0eafc, #cfdef3); /* gradiente soft */
+  min-height: 100vh;
 }
 
+/* Container */
 .container {
   max-width: 900px;
   margin: 0 auto;
-  padding: 50px 20px;
+  padding: 60px 20px;
 }
 
 /* Header */
 h1 {
   font-family: 'Playfair Display', serif;
   font-size: 3em;
-  margin-bottom: 5px;
-  color: #0d1b2a; /* Elegant dark blue */
+  text-align: center;
+  color: #0d1b2a;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
 .subtitle {
   font-size: 1.2em;
-  color: #555;
-  margin-bottom: 30px;
+  text-align: center;
+  color: #415a77;
+  margin-bottom: 40px;
 }
 
 /* Navigation */
 nav {
-  margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 nav a {
-  margin-right: 20px;
-  color: #1b263b; /* Dark blue */
-  text-decoration: none;
+  margin: 0 15px;
+  color: #0d1b2a;
   font-weight: 500;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
   transition: 0.3s;
 }
 
 nav a:hover {
-  text-decoration: underline;
-  color: #415a77;
+  background: #415a77;
+  color: #fff;
 }
 
-/* Sections */
+/* Section styling */
 section {
-  margin-bottom: 50px;
-  padding: 30px;
-  background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  background: rgba(255,255,255,0.95);
+  border-radius: 15px;
+  padding: 35px;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+section:hover {
+  transform: translateY(-3px);
 }
 
 h2 {
   font-family: 'Playfair Display', serif;
   font-size: 1.8em;
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 10px;
-  margin-bottom: 15px;
   color: #0d1b2a;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
 }
 
 /* Links */
 a {
-  color: #1b263b;
+  color: #0d1b2a;
   text-decoration: none;
   font-weight: 500;
+  transition: 0.3s;
 }
 
 a:hover {
-  color: #415a77;
+  color: #1b263b;
   text-decoration: underline;
+}
+
+/* CV & University box */
+.cv-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cv-box a {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #0d1b2a;
+  color: #fff;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.cv-box a:hover {
+  background: #415a77;
 }
 </style>
 </head>
@@ -124,12 +155,10 @@ My research focuses on general relativity, cosmology, and the conceptual foundat
 
 <section id="cv">
 <h2>Curriculum Vitae</h2>
-<p>
-Download my CV: <a href="CV_Aaron.pdf">CV_Aaron.pdf</a>
-</p>
-<p>
-Visit my university page: <a href="https://dmif.uniud.it/it/didattica/dottorato/smf/dottorandi/aaron-collavini" target="_blank">University of Udine Research Page</a>
-</p>
+<div class="cv-box">
+  <a href="CV_Aaron.pdf" target="_blank">Download CV</a>
+  <a href="https://www.uniud.it/en/researchers" target="_blank">University of Udine Research Page</a>
+</div>
 </section>
 
 <section id="contact">
