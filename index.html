@@ -4,122 +4,140 @@
 <meta charset="UTF-8">
 <title>Aaron Collavini – Physics & Philosophy</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="PhD student in theoretical physics and philosophy. Research interests: cosmology, general relativity, foundations of physics.">
+<meta name="description" content="PhD student in theoretical physics and philosophy. Research interests: foundations of gravity, space-time structure.">
 
 <!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
 <style>
-/* Reset & global */
-* { box-sizing: border-box; margin:0; padding:0; }
+
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* BODY */
 body {
   font-family: 'Roboto', sans-serif;
-  line-height: 1.6;
-  color: #222;
-  background: linear-gradient(135deg, #e0eafc, #cfdef3); /* gradiente soft */
+  line-height: 1.65;
+  color: #1e1e1e;
+  background: linear-gradient(135deg, #eef2f7, #dde6f1);
   min-height: 100vh;
 }
 
-/* Container */
+/* CONTAINER */
 .container {
   max-width: 900px;
   margin: 0 auto;
-  padding: 60px 20px;
+  padding: 70px 20px;
 }
 
-/* Header */
+/* HEADER */
 h1 {
   font-family: 'Playfair Display', serif;
   font-size: 3em;
   text-align: center;
-  color: #0d1b2a;
+  color: #0a2540;
   margin-bottom: 10px;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
 .subtitle {
-  font-size: 1.2em;
+  font-size: 1.15em;
   text-align: center;
-  color: #415a77;
-  margin-bottom: 40px;
-}
-
-/* Navigation */
-nav {
-  text-align: center;
+  color: #4a6fa5;
   margin-bottom: 50px;
 }
 
+/* NAVIGATION — BUTTON STYLE */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
 nav a {
-  margin: 0 15px;
-  color: #0d1b2a;
+  padding: 12px 26px;
+  background: #0a2540;
+  color: #ffffff;
+  font-size: 1em;
   font-weight: 500;
+  border-radius: 30px;
   text-decoration: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-  transition: 0.3s;
+  transition: all 0.3s ease;
 }
 
 nav a:hover {
-  background: #415a77;
-  color: #fff;
+  background: #163a5f;
+  transform: translateY(-2px);
 }
 
-/* Section styling */
+/* SECTIONS */
 section {
-  background: rgba(255,255,255,0.95);
-  border-radius: 15px;
-  padding: 35px;
-  margin-bottom: 40px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
-}
-
-section:hover {
-  transform: translateY(-3px);
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px;
+  margin-bottom: 50px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
 h2 {
   font-family: 'Playfair Display', serif;
   font-size: 1.8em;
-  color: #0d1b2a;
-  border-bottom: 2px solid #ddd;
+  color: #0a2540;
+  border-bottom: 2px solid #e0e0e0;
   padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+/* TEXT */
+p {
   margin-bottom: 15px;
 }
 
-/* Links */
+/* LINKS */
 a {
-  color: #0d1b2a;
+  color: #1f4e79;
   text-decoration: none;
   font-weight: 500;
-  transition: 0.3s;
 }
 
 a:hover {
-  color: #1b263b;
+  color: #163a5f;
   text-decoration: underline;
 }
 
-/* CV & University box */
+/* CV BUTTON */
 .cv-box {
   display: flex;
-  flex-direction: column;
-  gap: 15px;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .cv-box a {
-  display: inline-block;
-  padding: 10px 15px;
-  background: #0d1b2a;
-  color: #fff;
-  border-radius: 8px;
+  padding: 12px 24px;
+  background: #1f4e79;
+  color: #ffffff;
+  border-radius: 25px;
+  text-decoration: none;
   transition: 0.3s;
 }
 
 .cv-box a:hover {
-  background: #415a77;
+  background: #163a5f;
 }
+
+/* FOOTER SPACING */
+footer {
+  text-align: center;
+  margin-top: 60px;
+  color: #666;
+  font-size: 0.9em;
+}
+
 </style>
 </head>
 
@@ -139,9 +157,18 @@ a:hover {
 
 <section id="research">
 <h2>Research</h2>
+
 <p>
-My research focuses on the foundations of gravitational theories. I am particularly interested in the geometrical structure of space-time structure, and with its interplay with matter.
-<a href="https://dmif.uniud.it/it/didattica/dottorato/smf/dottorandi/aaron-collavini" target="_blank">University of Udine Research Page</a>
+My research focuses on the foundations of gravitational theories,
+with particular attention to the geometrical structure of space-time
+and its interplay with matter.
+</p>
+
+<p>
+I am currently affiliated with the
+<a href="https://dmif.uniud.it/it/didattica/dottorato/smf/dottorandi/aaron-collavini" target="_blank">
+University of Udine
+</a>.
 </p>
 </section>
 
@@ -150,7 +177,11 @@ My research focuses on the foundations of gravitational theories. I am particula
 <ul>
   <li>Paper Title 1, Journal Name (Year)</li>
   <li>Paper Title 2, Journal Name (Year)</li>
-  <li>“Particelle in fisica moderna”, (in Italian: “Particles in Modern Physics”), with L. Gasparinetti, APhEx (<a href="https://www.aphex.it/particelle-in-fisica-moderna/">view</a>)</li>
+  <li>
+    “Particelle in fisica moderna” (Particles in Modern Physics),
+    with L. Gasparinetti, APhEx —
+    <a href="https://www.aphex.it/particelle-in-fisica-moderna/" target="_blank">view</a>
+  </li>
 </ul>
 </section>
 
@@ -163,8 +194,17 @@ My research focuses on the foundations of gravitational theories. I am particula
 
 <section id="contact">
 <h2>Contact</h2>
-<p>Email: <a href="mailto:collavini.aaron@spes.uniud.it">collavini.aaron@spes.uniud.it</a></p>
+<p>
+Email:
+<a href="mailto:collavini.aaron@spes.uniud.it">
+collavini.aaron@spes.uniud.it
+</a>
+</p>
 </section>
+
+<footer>
+© Aaron Collavini
+</footer>
 
 </div>
 </body>
