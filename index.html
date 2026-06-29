@@ -6,158 +6,109 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="PhD student in theoretical physics and philosophy. Research interests: foundations of gravity, space-time structure.">
 
-<!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
 <style>
 
 /* RESET */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* BODY */
 body {
   font-family: 'Roboto', sans-serif;
-  line-height: 1.65;
-  color: #1e1e1e;
   background: linear-gradient(135deg, #eef2f7, #dde6f1);
-  min-height: 100vh;
+  color: #1e1e1e;
+  line-height: 1.6;
 }
 
 /* CONTAINER */
 .container {
   max-width: 900px;
   margin: 0 auto;
-  padding: 70px 20px;
+  padding: 60px 20px;
+}
+
+/* CARD BASE */
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  padding: 40px;
+  margin-bottom: 40px;
 }
 
 /* HERO */
 .hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 45px;
-  margin-bottom: 60px;
+  text-align: center;
 }
 
 /* PROFILE IMAGE */
 .profile-photo {
-  width: 210px;
-  height: 210px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
-  flex-shrink: 0;
-}
-
-/* HERO TEXT */
-.hero-info {
-  max-width: 540px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  margin-bottom: 20px;
 }
 
 /* NAME */
-.hero-info h1 {
+h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 2.9em;
+  font-size: 2.8em;
   color: #0a2540;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 /* SUBTITLE */
 .subtitle {
   font-size: 1.2em;
   color: #4a6fa5;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
-/* AFFILIATIONS (CLEAN TEXT) */
+/* AFFILIATIONS */
 .affiliations {
-  font-size: 0.98em;
-  color: #333;
   margin-bottom: 8px;
+  color: #333;
 }
 
-/* AFFILIATIONS LINKS */
-.affiliations-links {
-  font-size: 0.95em;
-  color: #1f4e79;
-  line-height: 1.6;
-}
-
-.affiliations-links a {
+/* LINKS */
+a {
   color: #1f4e79;
   text-decoration: none;
   font-weight: 500;
 }
 
-.affiliations-links a:hover {
-  color: #163a5f;
+a:hover {
   text-decoration: underline;
 }
 
-/* RESPONSIVE */
-@media (max-width: 700px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-info h1 {
-    text-align: center;
-  }
-}
-
-/* NAVIGATION */
+/* NAV */
 nav {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
   flex-wrap: wrap;
-  margin-bottom: 60px;
 }
 
 nav a {
-  padding: 12px 26px;
   background: #0a2540;
-  color: #ffffff;
-  font-size: 1em;
-  font-weight: 500;
-  border-radius: 30px;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 25px;
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: 0.2s;
 }
 
 nav a:hover {
   background: #163a5f;
-  transform: translateY(-2px);
-}
-/* WHITE CARD STYLE (GLOBAL) */
-.card {
-  background: #ffffff;
-  border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  padding: 40px;
-  margin-bottom: 50px;
 }
 
-/* HERO OVERRIDE */
-.hero.card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 45px;
-}
-
-/* RESPONSIVE */
-@media (max-width: 700px) {
-  .hero.card {
-    flex-direction: column;
-    text-align: center;
-  }
-}
 </style>
 </head>
 
@@ -165,34 +116,27 @@ nav a:hover {
 
 <div class="container">
 
-  <div class="hero">
+  <!-- HERO -->
+  <div class="card hero">
 
-    <img src="Foto_Aaron.jpg" alt="Aaron Collavini" class="profile-photo">
-
-    <div class="hero-info">
-
-      <h1>Aaron Collavini</h1>
-
-     <div class="hero card">
-
-  <img src="Foto_Aaron.jpg" alt="Aaron Collavini" class="profile-photo">
-
-  <div class="hero-info">
+    <img src="Foto_Aaron.jpg" class="profile-photo" alt="Aaron Collavini">
 
     <h1>Aaron Collavini</h1>
 
-    <p class="subtitle">
-      PhD Candidate in Physics & Philosophy
-    </p>
+    <p class="subtitle">PhD Candidate in Physics & Philosophy</p>
 
     <p class="affiliations">
       University of Udine · University of Geneva
     </p>
 
-    <p class="affiliations-links">
-      <a href="https://dmif.uniud.it/it/didattica/dottorato/smf/dottorandi/aaron-collavini" target="_blank">University of Udine</a>
+    <p class="affiliations">
+      INFN · Geneva Symmetry Group
+    </p>
+
+    <p class="affiliations">
+      <a href="https://dmif.uniud.it/it/didattica/dottorato/smf/dottorandi/aaron-collavini" target="_blank">Udine</a>
       ·
-      <a href="https://www.unige.ch/lettres/philo/accueil" target="_blank">University of Geneva</a>
+      <a href="https://www.unige.ch/lettres/philo/accueil" target="_blank">Geneva</a>
       ·
       <a href="https://www.infn.it/en/" target="_blank">INFN</a>
       ·
@@ -201,125 +145,11 @@ nav a:hover {
 
   </div>
 
-</div>
-
-
+  <!-- NAV -->
   <nav>
     <a href="#research">Research</a>
     <a href="#publications">Publications</a>
     <a href="#cv">CV</a>
     <a href="#contact">Contact</a>
   </nav>
-
-<section id="research">
-<h2>Research</h2>
-<p>
-Hello everyone! My name is Aaron Collavini, I am currently pursuing a double PhD degree in physics
-(<a href="https://dmif.uniud.it/it/didattica/dottorato/smf/dottorandi/aaron-collavini" target="_blank">University of Udine</a>) and philosophy (<a href="https://www.unige.ch/lettres/philo/accueil" target="_blank">University of Geneve</a>).
-I am affiliated with the <a href="https://www.infn.it/en/" target="_blank">National Institute of Nuclear Physics</a>, and member of the <a href="https://genevasymmetrygroup.wordpress.com/" target="_blank">Geneva Symmetry Group</a>.
-</p>
-  
-<p>
-My research focuses on the foundations of gravitational theories,
-with particular attention to the geometrical structure of space-time
-and its interplay with matter.
-</p>
-</section>
-
-<section id="publications">
-
-<h2>Selected Publications</h2>
-
-<div class="publication">
-
-<h3>On the Viability of Higher-Order Theories</h3>
-
-<p>
-
-with S. Ansoldi
-
-<br>
-
-<em>Philosophical Transactions of the Royal Society A</em>, 2025
-
-<br>
-
-<a href="LINK">Publisher</a>
-
-</p>
-
-</div>
-
-<div class="publication">
-
-<h3>Ontologies for Quantum Field Theory</h3>
-
-<p>
-
-with L. Gasparinetti
-
-<br>
-
-<em>Philosophy Compass</em>, 2025
-
-<br>
-
-<a href="LINK">Publisher</a>
-
-</p>
-
-</div>
-
-<div class="publication">
-
-<h3>Particelle in Fisica Moderna</h3>
-
-<p>
-
-with L. Gasparinetti
-
-<br>
-
-<em>APhEx</em>, 2025
-
-<br>
-
-<a href="LINK">Article</a>
-
-</p>
-
-</div>
-
-</section>
-
-<section id="cv">
-<h2>Curriculum Vitae</h2>
-<div class="cv-box">
-  <a href="CV_Aaron.pdf" target="_blank">Download CV</a>
-</div>
-</section>
-
-<section id="contact">
-<h2>Contact</h2>
-<p>
-UNIUD email:
-<a href="mailto:collavini.aaron@spes.uniud.it">
-collavini.aaron@spes.uniud.it
-</a>
-</p>
-<p>
-UNIGE email:
-<a href="mailto:aaron.collavini@etu.unige.ch">
-aaron.collavini@etu.unige.ch
-</a>
-</p>
-</section>
-
-<footer>
-© Aaron Collavini
-</footer>
-
-</div>
-</body>
-</html>
 
