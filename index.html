@@ -22,7 +22,7 @@ body {
   font-family: 'Roboto', sans-serif;
   background: linear-gradient(135deg, #eef2f7, #dde6f1);
   color: #1e1e1e;
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
 /* CONTAINER */
@@ -32,51 +32,54 @@ body {
   padding: 60px 20px;
 }
 
-/* CARD BASE */
+/* CARD */
 .card {
-  background: #ffffff;
+  background: #fff;
   border-radius: 16px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  padding: 40px;
-  margin-bottom: 40px;
+  padding: 45px;
+  margin-bottom: 55px;
 }
 
-/* HERO */
+/* ================= HERO ================= */
 .hero {
   text-align: center;
+  padding-top: 20px;
 }
 
-/* PROFILE IMAGE */
+/* FOTO: più in basso + leggermente shift a destra */
 .profile-photo {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-  margin-bottom: 20px;
-    /* 🔥 QUESTO è il punto chiave */
   object-position: center;
+
+  margin-bottom: 25px;
+
+  /* 🔥 spostamento richiesto */
+  transform: translate(15px, 10px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
 }
 
-  
 /* NAME */
 h1 {
   font-family: 'Playfair Display', serif;
   font-size: 2.8em;
   color: #0a2540;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 /* SUBTITLE */
 .subtitle {
-  font-size: 1.2em;
+  font-size: 1.15em;
   color: #4a6fa5;
   margin-bottom: 10px;
 }
 
 /* AFFILIATIONS */
 .affiliations {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   color: #333;
 }
 
@@ -91,12 +94,14 @@ a:hover {
   text-decoration: underline;
 }
 
-/* NAV */
+/* ================= NAV ================= */
 nav {
   display: flex;
   justify-content: center;
   gap: 15px;
   flex-wrap: wrap;
+
+  margin-bottom: 70px; /* 🔥 più spazio sotto nav */
 }
 
 nav a {
@@ -104,12 +109,67 @@ nav a {
   color: white;
   padding: 10px 22px;
   border-radius: 25px;
-  text-decoration: none;
+}
+
+/* ================= SECTIONS SPACING ================= */
+.card h2 {
+  margin-bottom: 25px;
+}
+
+/* ================= PUBLICATIONS ================= */
+.publication {
+  margin-bottom: 28px;
+}
+
+.publication h3 {
+  margin-bottom: 8px;
+  font-size: 1.1em;
+  color: #0a2540;
+}
+
+.publication p {
+  margin-bottom: 0;
+}
+
+.publications-title-space {
+  margin-bottom: 30px;
+}
+
+/* ================= CV BUTTON ================= */
+.cv-button {
+  display: inline-block;
+  padding: 12px 26px;
+  background: #1f4e79;
+  color: #fff;
+  border-radius: 25px;
+  font-weight: 500;
   transition: 0.2s;
 }
 
-nav a:hover {
+.cv-button:hover {
   background: #163a5f;
+}
+
+/* ================= CONTACT ================= */
+.contact-block {
+  margin-bottom: 18px;
+}
+
+.contact-block strong {
+  display: block;
+  color: #0a2540;
+  margin-bottom: 5px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+  .hero {
+    text-align: center;
+  }
+
+  .profile-photo {
+    transform: none;
+  }
 }
 
 </style>
@@ -214,22 +274,87 @@ nav a:hover {
 
 </section>
 
+<!-- RESEARCH -->
+<section id="research" class="card">
+
+  <h2>Research</h2>
+
+  <p>
+    My research focuses on the foundations of gravitational theories,
+    with particular attention to the geometrical structure of space-time
+    and its interplay with matter.
+  </p>
+
+</section>
+
+<!-- PUBLICATIONS -->
+<section id="publications" class="card">
+
+  <h2>Selected Publications</h2>
+
+  <div class="publications-title-space"></div>
+
+  <div class="publication">
+    <h3>On the Viability of Higher-Order Theories</h3>
+    <p>
+      with S. Ansoldi<br>
+      <em>Philosophical Transactions of the Royal Society A</em>, 2025<br>
+      <a href="#">Publisher</a>
+    </p>
+  </div>
+
+  <div class="publication">
+    <h3>Ontologies for Quantum Field Theory</h3>
+    <p>
+      with L. Gasparinetti<br>
+      <em>Philosophy Compass</em>, 2025<br>
+      <a href="#">Publisher</a>
+    </p>
+  </div>
+
+  <div class="publication">
+    <h3>Particelle in Fisica Moderna</h3>
+    <p>
+      with L. Gasparinetti<br>
+      <em>APhEx</em>, 2025<br>
+      <a href="#">Article</a>
+    </p>
+  </div>
+
+</section>
+
+<!-- CV -->
+<section id="cv" class="card">
+
+  <h2>Curriculum Vitae</h2>
+
+  <a href="CV_Aaron.pdf" class="cv-button" target="_blank">
+    Download CV
+  </a>
+
+</section>
+
 <!-- CONTACT -->
 <section id="contact" class="card">
 
   <h2>Contact</h2>
 
-  <p>
-    UNIUD: <a href="mailto:collavini.aaron@spes.uniud.it">collavini.aaron@spes.uniud.it</a>
-  </p>
+  <div class="contact-block">
+    <strong>University of Udine</strong>
+    <a href="mailto:collavini.aaron@spes.uniud.it">
+      collavini.aaron@spes.uniud.it
+    </a>
+  </div>
 
-  <p>
-    UNIGE: <a href="mailto:aaron.collavini@etu.unige.ch">aaron.collavini@etu.unige.ch</a>
-  </p>
+  <div class="contact-block">
+    <strong>University of Geneva</strong>
+    <a href="mailto:aaron.collavini@etu.unige.ch">
+      aaron.collavini@etu.unige.ch
+    </a>
+  </div>
 
 </section>
 
-</div>
 
 <footer style="text-align:center; padding:30px; color:#666;">
   © Aaron Collavini
