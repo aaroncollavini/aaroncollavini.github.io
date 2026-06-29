@@ -34,23 +34,83 @@ body {
   padding: 70px 20px;
 }
 
-/* HEADER */
-h1 {
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+  margin-bottom: 60px;
+}
+
+/* PROFILE IMAGE */
+.profile-photo {
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+  flex-shrink: 0;
+}
+
+/* HERO TEXT */
+.hero-info {
+  max-width: 540px;
+}
+
+/* NAME */
+.hero-info h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 3em;
-  text-align: center;
+  font-size: 2.9em;
   color: #0a2540;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
+/* SUBTITLE */
 .subtitle {
-  font-size: 1.15em;
-  text-align: center;
+  font-size: 1.2em;
   color: #4a6fa5;
-  margin-bottom: 50px;
+  margin-bottom: 12px;
 }
 
-/* NAVIGATION — BUTTON STYLE */
+/* AFFILIATIONS (CLEAN TEXT) */
+.affiliations {
+  font-size: 0.98em;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+/* AFFILIATIONS LINKS */
+.affiliations-links {
+  font-size: 0.95em;
+  color: #1f4e79;
+  line-height: 1.6;
+}
+
+.affiliations-links a {
+  color: #1f4e79;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.affiliations-links a:hover {
+  color: #163a5f;
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-info h1 {
+    text-align: center;
+  }
+}
+
+/* NAVIGATION */
 nav {
   display: flex;
   justify-content: center;
@@ -75,161 +135,49 @@ nav a:hover {
   transform: translateY(-2px);
 }
 
-/* SECTIONS */
-section {
-  background: #ffffff;
-  border-radius: 16px;
-  padding: 40px;
-  margin-bottom: 50px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-}
-
-h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.8em;
-  color: #0a2540;
-  border-bottom: 2px solid #e0e0e0;
-  padding-bottom: 8px;
-  margin-bottom: 20px;
-}
-
-/* TEXT */
-p {
-  margin-bottom: 15px;
-}
-
-/* LINKS */
-a {
-  color: #1f4e79;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-a:hover {
-  color: #163a5f;
-  text-decoration: underline;
-}
-
-/* CV BUTTON */
-.cv-box {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.cv-box a {
-  padding: 12px 24px;
-  background: #1f4e79;
-  color: #ffffff;
-  border-radius: 25px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.cv-box a:hover {
-  background: #163a5f;
-}
-
-/* FOOTER SPACING */
-footer {
-  text-align: center;
-  margin-top: 60px;
-  color: #666;
-  font-size: 0.9em;
-}
-
 </style>
 </head>
 
 <body>
-<div class="container">
-<div class="hero">
 
-    <!-- FOTO -->
+<div class="container">
+
+  <div class="hero">
+
     <img src="Foto_Aaron.jpg" alt="Aaron Collavini" class="profile-photo">
 
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  max-width: 900px;
-  margin: 0 auto 60px auto;
-  padding-top: 20px;
-}
-
-/* PROFILE IMAGE */
-.profile-photo {
-  width: 210px;
-  height: 210px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
-  flex-shrink: 0;
-}
-
-/* TEXT BLOCK */
-.hero-info {
-  max-width: 520px;
-}
-
-/* MAIN NAME */
-.hero-info h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.8em;
-  color: #0a2540;
-  margin-bottom: 10px;
-}
-
-/* SUBTITLE */
-.hero-info .subtitle {
-  font-size: 1.2em;
-  color: #4a6fa5;
-  margin-bottom: 14px;
-}
-
-/* AFFILIATIONS */
-.hero-info p {
-  color: #333;
-  line-height: 1.6;
-}
-
-/* RESPONSIVE */
-@media (max-width: 700px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-info h1 {
-    text-align: center;
-  }
-}
-  
     <div class="hero-info">
 
-        <h1>Aaron Collavini</h1>
+      <h1>Aaron Collavini</h1>
 
-        <p class="subtitle">
-            PhD Candidate in Physics & Philosophy
-        </p>
+      <p class="subtitle">
+        PhD Candidate in Physics & Philosophy
+      </p>
 
-        <p>
-            University of Udine · University of Geneva
-            <br>
-            INFN · Geneva Symmetry Group
-        </p>
+      <p class="affiliations">
+        University of Udine · University of Geneva
+      </p>
+
+      <p class="affiliations-links">
+        <a href="https://dmif.uniud.it/it/didattica/dottorato/smf/dottorandi/aaron-collavini" target="_blank">University of Udine</a>
+        ·
+        <a href="https://www.unige.ch/lettres/philo/accueil" target="_blank">University of Geneva</a>
+        ·
+        <a href="https://www.infn.it/en/" target="_blank">INFN</a>
+        ·
+        <a href="https://genevasymmetrygroup.wordpress.com/" target="_blank">Geneva Symmetry Group</a>
+      </p>
 
     </div>
 
-</div>
+  </div>
 
-<nav>
-  <a href="#research">Research</a>
-  <a href="#publications">Publications</a>
-  <a href="#cv">CV</a>
-  <a href="#contact">Contact</a>
-</nav>
+  <nav>
+    <a href="#research">Research</a>
+    <a href="#publications">Publications</a>
+    <a href="#cv">CV</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
 <section id="research">
 <h2>Research</h2>
