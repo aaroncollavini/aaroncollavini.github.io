@@ -134,7 +134,30 @@ nav a:hover {
   background: #163a5f;
   transform: translateY(-2px);
 }
+/* WHITE CARD STYLE (GLOBAL) */
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  padding: 40px;
+  margin-bottom: 50px;
+}
 
+/* HERO OVERRIDE */
+.hero.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+  .hero.card {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 </style>
 </head>
 
@@ -150,27 +173,36 @@ nav a:hover {
 
       <h1>Aaron Collavini</h1>
 
-      <p class="subtitle">
-        PhD Candidate in Physics & Philosophy
-      </p>
+     <div class="hero card">
 
-      <p class="affiliations">
-        University of Udine · University of Geneva
-      </p>
+  <img src="Foto_Aaron.jpg" alt="Aaron Collavini" class="profile-photo">
 
-      <p class="affiliations-links">
-        <a href="https://dmif.uniud.it/it/didattica/dottorato/smf/dottorandi/aaron-collavini" target="_blank">University of Udine</a>
-        ·
-        <a href="https://www.unige.ch/lettres/philo/accueil" target="_blank">University of Geneva</a>
-        ·
-        <a href="https://www.infn.it/en/" target="_blank">INFN</a>
-        ·
-        <a href="https://genevasymmetrygroup.wordpress.com/" target="_blank">Geneva Symmetry Group</a>
-      </p>
+  <div class="hero-info">
 
-    </div>
+    <h1>Aaron Collavini</h1>
+
+    <p class="subtitle">
+      PhD Candidate in Physics & Philosophy
+    </p>
+
+    <p class="affiliations">
+      University of Udine · University of Geneva
+    </p>
+
+    <p class="affiliations-links">
+      <a href="https://dmif.uniud.it/it/didattica/dottorato/smf/dottorandi/aaron-collavini" target="_blank">University of Udine</a>
+      ·
+      <a href="https://www.unige.ch/lettres/philo/accueil" target="_blank">University of Geneva</a>
+      ·
+      <a href="https://www.infn.it/en/" target="_blank">INFN</a>
+      ·
+      <a href="https://genevasymmetrygroup.wordpress.com/" target="_blank">Geneva Symmetry Group</a>
+    </p>
 
   </div>
+
+</div>
+
 
   <nav>
     <a href="#research">Research</a>
