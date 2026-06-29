@@ -149,45 +149,61 @@ footer {
     <img src="Foto_Aaron.jpg" alt="Aaron Collavini" class="profile-photo">
 
 .hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
   max-width: 900px;
   margin: 0 auto 60px auto;
-  text-align: center;
+  padding-top: 20px;
 }
 
-.profile-photo{
-
-    width:220px;
-
-    height:220px;
-
-    border-radius:50%;
-
-    object-fit:cover;
-
-    box-shadow:0 12px 30px rgba(0,0,0,.18);
-
+/* PROFILE IMAGE */
+.profile-photo {
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+  flex-shrink: 0;
 }
 
-.hero-info{
-
-    max-width:520px;
-
+/* TEXT BLOCK */
+.hero-info {
+  max-width: 520px;
 }
 
-.hero-info h1{
-
-    text-align:left;
-
-    margin-bottom:10px;
-
+/* MAIN NAME */
+.hero-info h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8em;
+  color: #0a2540;
+  margin-bottom: 10px;
 }
 
-.hero-info .subtitle{
+/* SUBTITLE */
+.hero-info .subtitle {
+  font-size: 1.2em;
+  color: #4a6fa5;
+  margin-bottom: 14px;
+}
 
-    text-align:left;
+/* AFFILIATIONS */
+.hero-info p {
+  color: #333;
+  line-height: 1.6;
+}
 
-    margin-bottom:18px;
+/* RESPONSIVE */
+@media (max-width: 700px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
 
+  .hero-info h1 {
+    text-align: center;
+  }
 }
   
     <div class="hero-info">
