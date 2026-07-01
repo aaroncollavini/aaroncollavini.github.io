@@ -52,15 +52,15 @@ body {
   width: 260px;
   height: 260px;
   border-radius: 50%;
-  object-fit: cover;
-  object-position: 10% 0%;
-transform: scale(0.8);
-  margin-bottom: 25px;
+  background-image: url("Foto_Aaron.jpg");
+  background-size: 85%;       /* 🔥 zoom OUT controllato */
+  background-repeat: no-repeat;
+  background-position: 50% 20%; /* 🔥 centra il viso */
 
-  /* 🔥 spostamento richiesto */
-  transform: translate(15px, 10px);
   box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  margin: 0 auto 25px auto;
 }
+  
 
 /* NAME */
 h1 {
@@ -185,7 +185,7 @@ nav a {
   <!-- HERO -->
   <div class="card hero">
 
-    <img src="Foto_Aaron.jpg" class="profile-photo" alt="Aaron Collavini">
+<div class="profile-photo"></div>
 
     <h1>Aaron Collavini</h1>
 
